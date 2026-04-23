@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: oklch(0.50 0.18 230);
+  --color-primary-light: oklch(0.62 0.15 230);
+  --color-primary-dark: oklch(0.38 0.20 230);
+  --color-secondary: oklch(0.65 0.12 180);
+  --color-secondary-light: oklch(0.75 0.10 180);
+  --color-accent: oklch(0.78 0.14 65);
+  --color-accent-dark: oklch(0.65 0.16 55);
+  --color-surface: oklch(0.985 0.003 230);
+  --color-surface-alt: oklch(0.96 0.006 230);
+  --color-surface-dark: oklch(0.13 0.02 230);
+  --color-text: oklch(0.18 0.02 230);
+  --color-text-muted: oklch(0.45 0.02 230);
+  --color-text-light: oklch(0.97 0.003 230);
+  --color-border: oklch(0.90 0.006 230);
+  --font-sans: var(--font-tajawal);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+/* Animated Section Transitions */
+.animate-fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-fade-in-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
