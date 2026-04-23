@@ -107,7 +107,7 @@ export const packages: Package[] = [
   {
     id: "schengen",
     country: "تأشيرة الشنغن",
-    price: "يبدأ من ١,٥٠٠ ر.س",
+    price: "يبدأ من ١,٥٠٠ ﷼",
     description:
       "تأشيرة شنغن تتيح لك زيارة ٢٧ دولة أوروبية بتأشيرة واحدة. نتكفل بجميع الإجراءات من تجهيز الملف حتى استلام التأشيرة.",
     category: "visa",
@@ -115,7 +115,7 @@ export const packages: Package[] = [
   {
     id: "uk",
     country: "تأشيرة بريطانيا",
-    price: "يبدأ من ٢,٠٠٠ ر.س",
+    price: "يبدأ من ٢,٠٠٠ ﷼",
     description:
       "خدمة متكاملة للحصول على تأشيرة المملكة المتحدة بما في ذلك تجهيز الملفات وحجز المواعيد.",
     category: "visa",
@@ -123,7 +123,7 @@ export const packages: Package[] = [
   {
     id: "usa",
     country: "تأشيرة أمريكا",
-    price: "يبدأ من ٢,٥٠٠ ر.س",
+    price: "يبدأ من ٢,٥٠٠ ﷼",
     description:
       "نساعدك في الحصول على التأشيرة الأمريكية مع إعداد شامل للمقابلة والملفات المطلوبة.",
     category: "visa",
@@ -131,7 +131,7 @@ export const packages: Package[] = [
   {
     id: "global-tourism",
     country: "وجهات سياحية عالمية",
-    price: "يبدأ من ٣,٠٠٠ ر.س",
+    price: "يبدأ من ٣,٠٠٠ ﷼",
     description:
       "برامج سياحية متكاملة لأجمل الوجهات حول العالم تشمل الإقامة والتنقل والجولات السياحية.",
     category: "tourism",
